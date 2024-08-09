@@ -31,9 +31,9 @@ function addToDo() {
             else {
                 latestID++;
                 promptUser();
-        }
+            }
+        })
     })
-})
 }
 
 function addDescription(name: string, id: number) {

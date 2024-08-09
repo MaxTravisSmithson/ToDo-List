@@ -107,6 +107,10 @@ function exitProgram() {
     rl.close();
     console.log("BYE!");
 }
+function info() {
+    console.log("This is a basic ToDo list built in the terminal where tasks can be added and can be removed by stting complete to true using the complete command.");
+    promptUser();
+}
 function promptUser() {
     rl.question("What would you like to do? (add, complete, view, exit): ", (command) => {
         if (command === 'add task') {
@@ -120,6 +124,9 @@ function promptUser() {
         }
         else if (command === 'exit') {
             exitProgram();
+        }
+        else if (command === 'info') {
+            info();
         }
         else {
             console.log('Unknown command. Please try again.');
