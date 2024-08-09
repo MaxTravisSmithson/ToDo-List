@@ -113,7 +113,7 @@ function info() {
 }
 function promptUser() {
     rl.question("What would you like to do? (add, complete, view, exit): ", (command) => {
-        if (command === 'add task') {
+        if (command === 'add') {
             addToDo();
         }
         else if (command === 'complete') {
